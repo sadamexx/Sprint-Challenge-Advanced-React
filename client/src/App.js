@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Players from "./components/Player";
 import NavBar from "./components/NavBar";
+import "./styles.scss";
 
 
 
