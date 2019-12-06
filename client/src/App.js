@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import { Table } from 'reactstrap';
 import Players from "./components/Player";
+import NavBar from "./components/NavBar";
 
 
 
@@ -33,15 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Table hover>
-            <thead>
-              <tr>
-                <th>Player Name</th>
-                <th>Country</th>
-                <th># of Searches</th>
-              </tr>
-            </thead>
-        </Table>
+        <NavBar />
         <Players players={this.state.players}/>
       </div>
     );//ends return

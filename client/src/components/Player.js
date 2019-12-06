@@ -1,12 +1,13 @@
 import React from "react";
-import PlayersTable from "./Table";
-
-export default function Player(props) {
+import PlayersCard from "./Card";
+import { Container, Row } from 'reactstrap';
+export default function Players(props) {
 
     return(
-        <div>
+        <Container>
+             <Row>
             {props.players.map((woman, index) => (
-                <PlayersTable 
+                <PlayersCard
                     key={index}
                     name={woman.name}
                     country={woman.country}
@@ -14,6 +15,7 @@ export default function Player(props) {
                     id={woman.id}
                 />
             ))};
-        </div>
+            </Row>
+        </Container>
     );
 }
